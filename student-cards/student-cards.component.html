@@ -1,0 +1,70 @@
+<input type="text" [(ngModel)]="term" (keyup)="fiiter()" placeholder="search">
+<br>
+<br>
+<label for="">Column</label>
+<select name="" id="" [(ngModel)]="column">
+    <option value="name">name</option>
+    <option value="phone">phone</option>
+    <option value="city">city</option>
+    <option value="dob">dob</option>
+    <option value="email">email</option>
+    <option value="school_name">school_name</option>
+    <option value="school_city">school_city</option>
+    <option value=""></option>
+</select>
+<label for="">Order</label>
+<select name="" id="" [(ngModel)]="order">
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+</select>
+<button (click)="sort()">Sort</button>
+
+<label for="">Count</label>
+<input type="number" [(ngModel)]="count">
+<label for="">Page</label>
+<input type="number" [(ngModel)]="page">
+<button class="" (click)="limit()">limit</button>
+
+<div class="parent">
+    <div class="child" *ngFor="let data of studentcards">
+        <div class="lbox">
+            <img src="{{data.school_logo}}" alt="" height="73px" width="70px">
+            <h2>{{data.school_name}}</h2>
+    </div>
+        <div class="databox">
+            <div class="data">
+                <label for="">Name:{{data.name}}</label><br>
+            
+                <label for="">Phone:{{data.phone}}</label><br>
+            
+                <label for="">City:{{data.city}}</label><br>
+            
+                <label for="">DoB:{{data.dob}}</label><br>
+                <label for="">Email:{{data.email}}</label>
+                
+            </div>
+            
+            <div class="img">
+                <img src="{{data.profile_picture}}" alt="" height="100%" width="100%">
+            </div>
+            
+           
+
+
+        </div>
+                <div class="bottombox">
+                     <div class="data2">
+                            <label for="">School City: {{data.school_city}}</label>
+                             <label for="">School Pin: {{data.school_pin}}</label>
+                     </div>
+
+                     <div class="buttons">
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button (click)="delete(data.id)">Delete</button>
+                    </div>
+                </div>
+    
+         
+    </div>
+</div>

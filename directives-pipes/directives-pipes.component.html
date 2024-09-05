@@ -1,0 +1,71 @@
+<p>directives-pipes works!</p>
+
+
+<!---for(let age of ages){
+console.log(age);
+}-->
+
+<!--*ngFor-->
+<h1 *ngFor="let age of ages">
+    My age is {{age}}
+</h1>
+
+<ul>
+    <li *ngFor="let state of states">
+        {{state | uppercase}}
+
+    </li>
+    
+</ul>
+
+
+<select name="" id="">
+    <option *ngFor="let state of states; let i=index" value="">
+             {{i+1}}   {{state | lowercase}}
+     </option>
+</select>
+
+<h3 *ngFor="let user of users">
+    My name is {{user.name}} with age {{user.age}}.Phone is {{user.Phone}}
+
+</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>Phone</th>
+            <th>marks</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td [ngStyle]="{'color': user.age<18?'red':'green'}">{{user.age}}</td> <!--ngStyle-->
+            <td>{{user.phone}}</td>
+            <td [ngClass]="{
+                'pass':user.marks>=35,
+                'fail':user.marks<35&&user.marks>=0,
+                'invalid':user.marks<0||user.marks>100
+            }">{{user.marks}}</td>
+
+        </tr>
+    </tbody>
+
+</table>
+
+<!--*ngIf-->
+<h1 *ngIf="true">Hello text one</h1>
+<h1 *ngIf="false">Hello text two</h1>
+
+
+<!--pipes-->
+<h1>{{today}}</h1>
+
+<h1>{{today | date}}</h1>
+<h1>{{today | date:'yy-MM-dd'}}</h1>
+<h1>{{today | date:'yy/MM/yy'}}</h1>
+<h1>{{today | date:'dd-MM-YYY,hh-mm-ss,z'}}</h1>

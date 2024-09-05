@@ -1,0 +1,11 @@
+.parent{
+    background-color: white;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    box-shadow: 0px,0px,15px,cadetblue;
+    }
+    button{
+        border: 0;
+        background-color: white;
+    }

@@ -1,0 +1,31 @@
+/* Style for the button */
+button {
+    background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Gradient background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 12px 24px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect */
+button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff6f61); /* Reversed gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Active effect */
+button:active {
+    background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Keep gradient on active state */
+    transform: scale(0.95); /* Slightly shrink the button */
+}
+
+/* Focus effect */
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.5); /* Add shadow to indicate focus */
+}

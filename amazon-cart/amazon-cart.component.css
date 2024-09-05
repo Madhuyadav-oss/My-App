@@ -1,0 +1,45 @@
+/* Style for the parent container */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between boxes */
+    padding: 20px; /* Padding around the container */
+    justify-content: center; /* Center the boxes horizontally */
+    
+}
+
+/* Style for each box with general properties */
+.parent > div {
+    border: 2px solid #ccc; /* Border around each box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+    /* background-color: #bd9595; Background color for boxes */
+    text-align: center; /* Center-align text inside boxes */
+   
+}
+
+/* Specific styles for each individual box */
+.acart1 {
+    width: 900px; /* Specific width for acart1 */
+    height: 250px; /* Specific height for acart1 */
+    background-color: #78c269; /* Light blue background for the first box */
+}
+
+.acart2 {
+    width: 200px; /* Specific width for acart2 */
+    height: 150px; /* Specific height for acart2 */
+    background-color: #fff3e0; /* Light orange background for the second box */
+}
+
+.acart3 {
+    width: 200px; /* Specific width for acart3 */
+    height: 150px; /* Specific height for acart3 */
+    background-color: #e8f5e9; /* Light green background for the third box */
+}
+
+.acart4 {
+    width: 200px; /* Specific width for acart4 */
+    height: 150px; /* Specific height for acart4 */
+    background-color: #fce4ec; /* Light pink background for the fourth box */
+}

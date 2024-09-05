@@ -1,0 +1,124 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f7c6c7, #e0c3fc);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="month"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #6a1b9a;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="month"]:focus {
+    border-color: #ab47bc;
+    box-shadow: 0 0 4px rgba(171, 71, 188, 0.3);
+    outline: none;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background: #6a1b9a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4a0072;
+    transform: scale(1.05);
+}
+
+.card-group {
+    margin-top: 15px;
+    border-top: 1px dashed #6a1b9a;
+    padding-top: 10px;
+    background: #f3e5f5;
+    border-radius: 5px;
+}
+
+.card-group h3 {
+    margin-top: 0;
+    color: #6a1b9a;
+    font-size: 1.2em;
+}
+
+.card-group label {
+    margin-bottom: 5px;
+}
+
+.card-group input[type="text"],
+.card-group input[type="number"],
+.card-group input[type="month"] {
+    margin-bottom: 10px;
+}
+
+.card-group button {
+    background: #d32f2f;
+    font-size: 12px;
+}
+
+.card-group button:hover {
+    background-color: #b71c1c;
+}

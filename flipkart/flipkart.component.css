@@ -1,0 +1,48 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.parent {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between boxes */
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.box{
+height: 45%;
+width: 22%;
+background-color: rgb(221, 231, 221);
+text-align: center;
+
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    /* padding: 0px; */
+    margin-bottom: 2px;
+    color:black;
+}
+.rs{
+    text-align: center;
+    color: blue;
+    font-weight: 700;
+}
+.star{
+    height: 30px;
+    width: 60px;
+    display: flex;
+    justify-content: left;
+}
+
+
+
+
+

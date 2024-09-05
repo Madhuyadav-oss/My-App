@@ -1,0 +1,25 @@
+/* Style for the paragraph */
+p {
+    background: linear-gradient(135deg, #ff6f61, #ffcc00); /* Gradient background */
+    color: white; /* Text color */
+    padding: 15px; /* Padding inside the paragraph */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Style for the heading */
+h3 {
+    background: linear-gradient(90deg, #4caf50, #81c784); /* Gradient background */
+    color: white; /* Text color */
+    padding: 10px; /* Padding inside the heading */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 22px; /* Font size */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border: 2px solid #81c784; /* Border to enhance appearance */
+    margin: 0; /* Remove default margin */
+}

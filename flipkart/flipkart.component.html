@@ -1,0 +1,16 @@
+<div class="parent" >
+    <div class="box" *ngFor="let data of flipkart">
+        <img src="{{data.image}}" alt="" height="130px" width="226px">
+        <div class="rating">
+            <app-rating [rating]="data.rating.rate" class="star"></app-rating>
+
+        </div>
+        <h3>{{data.category}}</h3>
+        {{data.title}}
+        <p class="rs">{{'Rs. '+data.price}}</p>
+    </div>
+  
+    
+
+
+</div>

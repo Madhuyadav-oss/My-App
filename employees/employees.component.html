@@ -1,0 +1,30 @@
+<p>employees works!</p>
+<input type="text"[(ngModel)]="term" (keyup)="filter()">
+<button (click)="experienceLH()">experience low to high</button>
+<button (click)="bonus()">applay 30000 bonus</button>
+<button (click)="cost()">cost to company</button>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Experience</th>
+            <th>Package</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees; let i=index">
+            <td>{{employee.name}}</td>
+            <!-- <td>{{employee.experience}}</td> -->
+             <app-rating [rating]="employee.experience"></app-rating>
+            <td>{{employee.package}}</td>
+            <td>{{employee.role}}</td>
+            <td>
+                <button (click)="delete(i)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

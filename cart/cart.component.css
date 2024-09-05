@@ -1,0 +1,210 @@
+/* Header section */
+.parent {
+    height: 100%;
+    width:100%;
+    background-color: white;
+    color: white;
+    padding: 20px;
+    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+   
+}
+
+.top {
+    /* margin: ; */
+    text-decoration-line: underline;
+    text-underline-position: above;
+    color: white;
+    background-color:white;
+    
+    
+}
+.flipcart{
+    height: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(12, 7, 7);
+    text-decoration: underline;
+    background-color: rgb(255, 123, 0);
+    font-weight: 800;
+}
+/* Top section styling */
+.top {
+    height: 25%;
+    /* width:97%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    background-color: rgba(232, 240, 241, 0.603);
+}
+
+/* Left section styling */
+.left {
+    height: 100%;
+    width: 60%;
+    padding: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.left input[type="text"] {
+    padding: 3px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+   margin-bottom: 5px;
+   margin-left: 16px;
+    width: 20%;
+}
+
+.left button {
+    padding: 4px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    /* background-color: #2bc47d; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+.dis{
+    background-color: #b30000;
+}
+.tp{
+    background-color: rgb(168, 103, 18);
+}
+.del{
+    background-color:blue
+}
+.fd{
+    background-color: rgb(255, 123, 0);
+    
+}
+.high{
+    background-color: #005bb5;
+}
+.low{
+    background-color: #008a1e;
+}
+.left button:hover {
+    background-color: #1eb500;
+}
+
+.left button,h4{
+    text-align: center;
+    
+}
+.left button.price{
+    background-color: #008a1e;
+}
+
+.left button.disc{
+    background-color: crimson;
+}
+
+/* .left hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #dddddd;
+} */
+
+/* Right section styling */
+.right {
+    height: 100%;
+    width: 40%;
+    margin-left: 20px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.right label {
+    margin-top: 0;
+    font-weight: normal;
+    color: black;
+    font-weight: 300;
+}
+
+.right input[type="text"],
+.right input[type="number"] {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.right input[type="radio"] {
+    margin-right: 3px;
+}
+
+.right button {
+    padding: 5px 20px;
+    background-color: #008a1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.right button:hover {
+    background-color: rgb(43, 61, 16);
+}
+
+/* Bottom section styling */
+.bottom {
+    padding: 10px;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #f4f4f4;
+}
+
+th, td {
+    /* padding: 9px; */
+    text-align: center;
+    border: 1px solid #0c0a0a;
+}
+
+th {
+    background-color: #060708;
+    color: white;
+    font: italic;
+    padding: 10px;
+}
+
+td{
+    background-color: #6d6d6d;
+    padding: 6px;
+}
+
+tr:hover td {
+    background-color: #4a4a4a;
+}
+
+
+td button {
+    padding: 5px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+td button:hover {
+    background-color: #b30000;
+}
+ 
+ 

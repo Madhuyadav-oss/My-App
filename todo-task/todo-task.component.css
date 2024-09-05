@@ -1,0 +1,54 @@
+/* Style for the paragraph */
+p {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: white; /* Text color */
+    padding: 15px; /* Padding inside the paragraph */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Style for the parent container */
+.parent {
+    display: flex;
+    gap: 20px; /* Space between boxes */
+    padding: 20px; /* Padding around the container */
+    justify-content: center; /* Center the boxes horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure horizontal alignment */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+/* Style for each specific todo box */
+.todo1, .todo2, .todo3 {
+    width: 500px; /* Specific width for all todo boxes */
+    height: 600px; /* Specific height for all todo boxes */
+    border: 2px solid #ddd; /* Border around each box */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background-color: #fff; /* Background color */
+    text-align: center; /* Center-align text inside boxes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Specific background colors for each todo box */
+.todo1 {
+    background-color: #f1f8e9; /* Light green background for todo1 */
+}
+
+.todo2 {
+    background-color: #fff3e0; /* Light orange background for todo2 */
+}
+
+.todo3 {
+    background-color: #e1f5fe; /* Light blue background for todo3 */
+}
+
+/* Hover effect for each todo box */
+/* .todo1:hover, .todo2:hover, .todo3:hover { */
+    /* transform: scale(1.05); Slightly enlarge the box on hover */
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); Enhance shadow on hover */
+/* } */

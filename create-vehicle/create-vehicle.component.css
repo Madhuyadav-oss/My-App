@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the parent container */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* padding: 20px; */
+    background-color: #f0f0f0;
+}
+
+/* Style the form container */
+form {
+    max-width: 600px;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the heading */
+h1 {
+    text-align: center;
+    color: #11ad79;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Style the labels */
+label {
+    display: block;
+    /* margin-bottom: 8px; */
+    font-weight: 700;
+    color: #333;
+}
+
+/* Style the input fields */
+input[type="text"] {
+    height: 30%;
+    width: calc(80% - 20px);
+    padding: 10px;
+    /* margin-bottom: 5px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Style the button */
+button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #eee3e3;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
